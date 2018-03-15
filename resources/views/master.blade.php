@@ -4,15 +4,23 @@
 @section('contenido')
 
 
+	
+
 	<form action="{{url('Listas')}}" method="POST">
 		{{csrf_field()}}
+
+	<link rel="stylesheet" href="../public/css/estilos.css">
+
+<section class="center">
 
 		<section class="col-lg-3">
 			<section class="form-control">
 				<input type="text" class="form-control" name="nombre" placeholder="nombre">
 			</section>
 		</section>
+
 	<br>
+
 		<section class="col-lg-3">
 			<section class="form-control">
 				<input type="text" class="form-control" name="apellido" placeholder="apellido">
@@ -55,7 +63,8 @@
 	<br>
 
 		<button type="submit" class="btn btn-primary" class="col-lg-3">agregar turno</button>
-		
+		<hr>
+	</section>	
 	</form>
 
 
@@ -74,6 +83,8 @@
 
 
 	<?php 
+
+
 			echo "<h1> TURNOS </h1>";
 
 				if (Session::has('matriz')) {
