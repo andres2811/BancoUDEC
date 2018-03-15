@@ -9,11 +9,10 @@
 </head> 
 <body>
 	
-	<h1> POR FAxxxxxxxxxxxxxxxxxxxx SUS DATOS PARA ASIGANAR UN TURNO PERO MUEVALO MK QUE TENGO AFAN</h1>
+	<h1> POR FAVOR INGRESE SUS DATOS PARA ASIGANAR UN TURNO</h1>
 
 	@yield('contenido')
 </body>
 </html>
-
 
 		
