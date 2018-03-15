@@ -41,7 +41,7 @@
 			<section class="form-control">
 				<select class="form-control" name="tipo">
 
-					<option value="">seleccione la prioridad</option>
+					<option value="">seleccione la prioridad del turno</option>
 					<option value="mujer embarazada">mujer embarazada</option>
 					<option value="tercera edad">tercera edad</option>
 					<option value="discapacitado">discapacitado</option>
