@@ -16,6 +16,7 @@ class ListaController extends Controller
     	$ciudades= $request->input('ciudad');
     	$edades= $request->input('edad');
     	$tipo= $request->input('tipo');
+           
  		
 
 
@@ -33,6 +34,7 @@ class ListaController extends Controller
                 'ciudad'=>$ciudades,
                 'edad'=>$edades,
                 'tipo'=>$tipo,
+                
 
             );
 
@@ -49,6 +51,7 @@ class ListaController extends Controller
                 'ciudad'=>$ciudades,
                 'edad'=>$edades,
                 'tipo'=>$tipo,
+                
             );
 
             Session::put('matriz',$vector_2);

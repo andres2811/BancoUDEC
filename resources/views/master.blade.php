@@ -4,6 +4,8 @@
 @section('contenido')
 
 
+<link rel="stylesheet" href="../../public/css/estilo.css">
+
 	<form action="{{url('Listas')}}" method="POST">
 		{{csrf_field()}}
 
@@ -55,9 +57,9 @@
     <br>
 
 
-		<section class="col-lg-3">
+		<!--<section class="col-lg-3">   
 			<section class="form-control">
-				<select class="form-control" name="tipo">
+				<select class="form-control" name="tipo2">
 
 					<option value="">seleccione el tipo de turno</option>
 					<option value="consignacion">consignacion</option>
@@ -67,7 +69,7 @@
 
 				</select>
 			</section>
-		</section>
+		</section>-->                  
 
 
 
