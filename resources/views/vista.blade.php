@@ -13,7 +13,7 @@
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">BANCO</a>
+  <a class="navbar-brand" href="#">BANCO UDEC</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -51,11 +51,7 @@
 
 
 	
-<<<<<<< HEAD
-	<h1> POR FAVOR INGRESE SUS DATOS PARA ASIGNAR UN TURNO</h1>
-=======
-	<h1> POR FAVOR INGRESE SUS DATOS PARA ASIGANAR UN TURNO</h1>
->>>>>>> master
+
 
 	@yield('contenido')
 </body>
