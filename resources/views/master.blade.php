@@ -4,7 +4,14 @@
 @section('contenido')
 
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="../../public/css/estilo.css">
+=======
+
+<link rel="stylesheet" href="../../public/css/estilo.css">
+
+
+>>>>>>> master
 	<form action="{{url('Listas')}}" method="POST">
 		{{csrf_field()}}
 
@@ -89,33 +96,42 @@
 	</form>
 
 
-	<!--<h1>LENGUAJE BLADE</h1>
+	<h1 align="center">LISTA DE TURNOS</h1>
+	    <div class="form-control">
         @if(Session::has('matriz'))
             @foreach (Session::get('matriz') as $array)
                 @foreach ($array as $word => $meaning)
-                  <dt>{{ $word }}</dt>
+                <div class="form-inline">
+                	<div class="col-sm-2">
+                  		<dt class="">{{ $word }}</dt>
+                 	</div>
+                 	<div class="btn btn-primary">
                   <dd>{{ $meaning }}</dd>
+                  </div>
+                </div>
                 @endforeach
                 <br><br>
             @endforeach
-        @endif-->
+        @endif
+        </div>
 
 
 
 
-	<?php 
+	<!--<?php 
 
 
-			echo "<h1> TURNOS </h1>";
+			/*echo "<h1> TURNOS </h1>";
 
 				if (Session::has('matriz')) {
 
 					foreach (Session::get('matriz') as $index => $array) {
 
+                        
 						echo "---------------";
 						echo "<dt>| TURNO $index   |</dt>";
 						echo "---------------";
-
+                        
 						foreach ($array as $key => $value) {
 
 							 echo "<dt>$key : $value</dt>";
@@ -126,6 +142,6 @@
 						echo "<br><br>";
 	
 					}	
-				}
-	?>
+				}*/
+	?>-->
 @stop
