@@ -16,6 +16,7 @@ class ListaController extends Controller
     	$ciudades= $request->input('ciudad');
     	$edades= $request->input('edad');
     	$tipo= $request->input('tipo');
+           
  		
 
 
@@ -33,11 +34,12 @@ class ListaController extends Controller
                 'ciudad'=>$ciudades,
                 'edad'=>$edades,
                 'tipo'=>$tipo,
+                
 
             );
 
             Session::put('matriz',$vector_1);
-            echo "se inserto un nuevo valor";
+            //echo "se inserto un nuevo valor";
 
     	}else{
 
@@ -49,10 +51,11 @@ class ListaController extends Controller
                 'ciudad'=>$ciudades,
                 'edad'=>$edades,
                 'tipo'=>$tipo,
+                
             );
 
             Session::put('matriz',$vector_2);
-            echo "se creo una variable de sesion";
+            //echo "se creo una variable de sesion";
 
 		}	  		
 
