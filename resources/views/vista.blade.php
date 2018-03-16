@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Proyecto</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="../../public/css/estilo.css">
 
 </head> 
 <body>
@@ -49,11 +51,14 @@
 
 
 	
+<<<<<<< HEAD
 	<h1> POR FAVOR INGRESE SUS DATOS PARA ASIGNAR UN TURNO</h1>
+=======
+	<h1> POR FAVOR INGRESE SUS DATOS PARA ASIGANAR UN TURNO</h1>
+>>>>>>> master
 
 	@yield('contenido')
 </body>
 </html>
-
 
 		

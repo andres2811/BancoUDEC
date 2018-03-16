@@ -4,7 +4,11 @@
 @section('contenido')
 
 
+<<<<<<< HEAD
 	
+=======
+<link rel="stylesheet" href="../../public/css/estilo.css">
+>>>>>>> master
 
 	<form action="{{url('Listas')}}" method="POST">
 		{{csrf_field()}}
@@ -59,6 +63,28 @@
 				</select>
 			</section>
 		</section>
+        
+    <br>
+
+
+		<!--<section class="col-lg-3">   
+			<section class="form-control">
+				<select class="form-control" name="tipo2">
+
+					<option value="">seleccione el tipo de turno</option>
+					<option value="consignacion">consignacion</option>
+					<option value="retiro">retiro</option>
+					<option value="consulta administrativa">consulta administrativa</option>
+					
+
+				</select>
+			</section>
+		</section>-->                  
+
+
+
+
+
 
 	<br>
 
@@ -106,5 +132,5 @@
 	
 					}	
 				}
-			 ?>
+	?>
 @stop
