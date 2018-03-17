@@ -1,7 +1,6 @@
 @extends('vista')
-
-
 @section('contenido')
+
 
 
 <link rel="stylesheet" href="../../public/css/estilo.css">
@@ -74,22 +73,19 @@
 
 				</select>
 			</section>
-		</section-->                 
+		</section-->                
 
+			<br>
 
+			<button type="submit" class="btn btn-primary" class="col-lg-3">agregar turno</button>
+			<hr>
 
-
-
-
-	<br>
-
-		<button type="submit" class="btn btn-primary" class="col-lg-3">agregar turno</button>
-		<hr>
-
-		</div>
+			</div>
 		</div>
 	</form>
-		<h1 align='center'> TURNOS </h1>
+
+
+	<h1 align='center'> TURNOS </h1>
 		<table class="table">
 			<thead>
                 <tr>
@@ -103,8 +99,8 @@
                   <!--th>Prioridad</th-->
                    
                 </tr>
-              </thead>  
-              <tbody>
+        </thead>  
+         <tbody>
               	@if(Session::has('matriz'))
               	<tr>
               		@foreach (Session::get('matriz') as $index=> $array)
@@ -116,27 +112,8 @@
             @endforeach
             <br><br>
         		@endif
-            </tbody>	
+        </tbody>	
 		</table>
         
 
-
-
-
-	<!--?php 
-			echo "<h1 align='center'> TURNOS </h1>";
-				if (Session::has('matriz')) {
-					foreach (Session::get('matriz') as $index => $array) {
-						echo "<dt align='center'> </dt>";
-						echo "<dt align='center'>| TURNO $index   |</dt>";
-						echo "<dt align='center'> </dt>";
-						foreach ($array as $key => $value) {
-							 echo "<dt align='center'>$key : $value</dt>";
-                      //echo "<dd>$value</dd>";
-						}
-						echo "<br><br>";
-					}	
-				}
-	?>
--->
 @stop
