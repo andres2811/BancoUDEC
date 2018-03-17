@@ -4,20 +4,15 @@
 @section('contenido')
 
 
-<<<<<<< HEAD
-<link rel="stylesheet" href="../../public/css/estilo.css">
-=======
-
 <link rel="stylesheet" href="../../public/css/estilo.css">
 
-
->>>>>>> master
 	<form action="{{url('Listas')}}" method="POST">
 		{{csrf_field()}}
 
-	<link rel="stylesheet" href="../public/css/estilos.css">
+	<link rel="stylesheet" href="../../public/css/estilos.css">
 
-<section class="center">
+	<div class="centrar">
+	<div class="p-3 mb-2 bg-dark text-white">
 
 		<section class="col-lg-3">
 			<section class="form-control">
@@ -65,11 +60,9 @@
 				</select>
 			</section>
 		</section>
-        
     <br>
 
-
-		<!--<section class="col-lg-3">   
+		<!--section class="col-lg-3">   
 			<section class="form-control">
 				<select class="form-control" name="tipo2">
 
@@ -81,7 +74,7 @@
 
 				</select>
 			</section>
-		</section>-->                  
+		</section-->                 
 
 
 
@@ -92,56 +85,58 @@
 
 		<button type="submit" class="btn btn-primary" class="col-lg-3">agregar turno</button>
 		<hr>
-	</section>	
+
+		</div>
+		</div>
 	</form>
-
-
-	<h1 align="center">LISTA DE TURNOS</h1>
-	    <div class="form-control">
-        @if(Session::has('matriz'))
-            @foreach (Session::get('matriz') as $array)
-                @foreach ($array as $word => $meaning)
-                <div class="form-inline">
-                	<div class="col-sm-2">
-                  		<dt class="">{{ $word }}</dt>
-                 	</div>
-                 	<div class="btn btn-primary">
-                  <dd>{{ $meaning }}</dd>
-                  </div>
-                </div>
+		<h1 align='center'> TURNOS </h1>
+		<table class="table">
+			<thead>
+                <tr>
+                  <th># turno</th>
+                  <th>nombre</th>
+                  <th>Apellido</th>
+                  <th>Cedula</th>
+                  <th>Ciudad</th>
+                  <th>Edad</th>
+                  <th>Tipo Turno</th>
+                  <!--th>Prioridad</th-->
+                   
+                </tr>
+              </thead>  
+              <tbody>
+              	@if(Session::has('matriz'))
+              	<tr>
+              		@foreach (Session::get('matriz') as $index=> $array)
+              		<td>{{$index}}</td>
+                	@foreach ($array as $word => $meaning)
+                   <td class= "danger">{{$meaning}}</td>  
                 @endforeach
-                <br><br>
+                </tr>   
             @endforeach
-        @endif
-        </div>
+            <br><br>
+        		@endif
+            </tbody>	
+		</table>
+        
 
 
 
 
-	<!--<?php 
-
-
-			/*echo "<h1> TURNOS </h1>";
-
+	<!--?php 
+			echo "<h1 align='center'> TURNOS </h1>";
 				if (Session::has('matriz')) {
-
 					foreach (Session::get('matriz') as $index => $array) {
-
-                        
-						echo "---------------";
-						echo "<dt>| TURNO $index   |</dt>";
-						echo "---------------";
-                        
+						echo "<dt align='center'> </dt>";
+						echo "<dt align='center'>| TURNO $index   |</dt>";
+						echo "<dt align='center'> </dt>";
 						foreach ($array as $key => $value) {
-
-							 echo "<dt>$key : $value</dt>";
+							 echo "<dt align='center'>$key : $value</dt>";
                       //echo "<dd>$value</dd>";
-
 						}
-
 						echo "<br><br>";
-	
 					}	
-				}*/
-	?>-->
+				}
+	?>
+-->
 @stop

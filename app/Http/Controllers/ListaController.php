@@ -57,7 +57,21 @@ class ListaController extends Controller
             Session::put('matriz',$vector_2);
             //echo "se creo una variable de sesion";
 
-		}	  		
+
+            $van=true;
+            foreach (Session::get('matriz') as $vector_1) {
+
+                foreach ($vector_1 as $key => $value) {
+
+                    if ($vector_1['cedula']==$cedulas){
+                        
+                          $van=false;
+
+                 }              
+             }
+             return $van;
+		  }	
+      }  		
 
         
         return view('master');
